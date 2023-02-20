@@ -1,2 +1,2 @@
 # recipe_project
-Project 3, DSC80
+This is the third project in DSC80
