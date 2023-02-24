@@ -59,6 +59,27 @@ The rating column was NMAR dependant on the number of steps; we determined this 
 the 'n_steps' and the 'rating' columm. We obtained a p-value of 0.0 upon running the test 1000 timmes which told us that
 it is very unlikely that the data was missing due to random chance.
 
+## Missingness Dependency 
+
+> The results of this permutation test showed us that there was an extremely unlikely chance that the missingness of the
+> rating column had nothing to do with the "n_steps" column; we obtained a p-value of 0.0 which meant that we should 
+> reject the null hypothesis.
 
 <iframe src="assets/plot2.html" width=800 height=600 frameBorder=0></iframe>
+
+> the results of this permutation did not wield any significant results. We obtained a p_value of 0.305 which led us to 
+> conclude that it was unlikely the missingness of the "rating" column was related to the values in the "minutes" column. 
+> Because of our results we failed to reject the null hypothesis.
+
+<iframe src="assets/plot3.html" width=800 height=600 frameBorder=0></iframe>
+
+## Null and Alternative Hypothesis
+>For our work, our null hypothesis was that "There is no relationship between how long a recipe takes to complete and 
+> its average rating"
+> Our alternative hypothesis was "If a recipe takes longer than 1000 minutes, it is more likely to have a higher average
+> rating" We used the difference in means as our test statistic and set a significance level of 0.05. The resulting 
+> p_value for our test was 0.14 which meant we failed to reject the null. We decided that the difference in means of
+> ratings was a good test statistic because we were trying to decide whether or not it was worth it to spend more time
+> in the kitchen. If we used to absolute difference for example, we could have ended up with data that support our 
+> alternative hypothesis when in reality it was the faster recipes that were higher.
 
