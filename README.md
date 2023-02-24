@@ -1,5 +1,4 @@
-# recipe_project
-This is the third project in DSC80
+# How Long Should You Really Spend in the Kitchen?
 
 ## Introduction and Question Identification
 We are using the "Recipes" dataset which contains data on many different recipes. Our analysis aims to answer the 
@@ -81,6 +80,6 @@ it is very unlikely that the data was missing due to random chance.
 > rating". We used the difference in means as our test statistic and set a significance level of 0.05. The resulting 
 > p_value for our test was 0.14 which meant we failed to reject the null. We decided that the difference in means of
 > ratings was a good test statistic because we were trying to decide whether or not it was worth it to spend more time
-> in the kitchen. If we used to absolute difference for example, we could have ended up with data that support our 
+> in the kitchen. If we used to absolute difference for example, we could have ended up with data that supported our 
 > alternative hypothesis when in reality it was the faster recipes that were higher.
 
