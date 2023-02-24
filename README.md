@@ -32,3 +32,33 @@ analysis.
 
 <iframe src="assets/plot.html" width=800 height=600 frameBorder=0></iframe>
 
+> This plot shows the relationship between the time (in minutes) it takes to make each recipe as well as the rating.
+Even though there are some outliers, we can generally see that recipes that take more time to make tend to have 
+higher ratings.
+
+
+|   recipe_id | rating |
+|------------:|---------:|
+|          38 |  4.25    |
+|          40 |  5       |
+|          41 |  4       |
+|          43 |  1       |
+|          45 |  3       |
+|          49 |  5       |
+|          50 |  4       |
+|          53 |  3       |
+|          55 |  5       |
+|          58 |  4.66667 |
+
+> This dataframe is grouped by recipe id with aggfun 'mean'; it shows us the average rating for each recipe; the first 
+> 10 rows of the dataframe are shown.
+
+## NMAR Analysis
+
+The rating column was NMAR dependant on the number of steps; we determined this by running a permutation test comparing
+the 'n_steps' and the 'rating' columm. We obtained a p-value of 0.0 upon running the test 1000 timmes which told us that
+it is very unlikely that the data was missing due to random chance.
+
+
+<iframe src="assets/plot2.html" width=800 height=600 frameBorder=0></iframe>
+
